@@ -1,0 +1,46 @@
+.tableContainer {
+  h2 {
+    color: var(--neutral-gray-800);
+    font-weight: 700;
+  }
+  p {
+    color: var(--neutral-gray-800);
+  }
+
+  
+}
+
+/* Estilo general de la tabla */
+.table {
+  width: 100%;
+  text-align: left;
+}
+
+/* Encabezado de la tabla */
+.table thead {
+  
+}
+
+.table th {
+ 
+}
+
+.table th:hover {
+ 
+}
+
+/* Cuerpo de la tabla */
+.table tbody tr {
+  border-bottom: 1px solid var(--neutral-gray-200); /* Raya entre filas */
+  padding: 8px;
+  
+}
+
+.table tbody tr:hover {
+  background-color: var(--neutral-gray-100);
+}
+
+/* Celdas de la tabla */
+.table td {
+  padding: 8px;
+}

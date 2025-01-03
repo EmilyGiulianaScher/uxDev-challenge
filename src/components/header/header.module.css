@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px;
+    align-items: center;
+    
+    .tools {
+        display: flex;
+        gap: 16px;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    img{
+        max-width: 32px;
+    }
+}
