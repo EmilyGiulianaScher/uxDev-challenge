@@ -1,10 +1,14 @@
+import styles from "./orders.module.css"; 
+
 export const Orders = () => (
   <>
-    <h1>Orders</h1>
-    <div>
+    <div className={styles.orderscontainer}>
       <img src="/public/whitepaper.png" alt="white-paper-image" />
-      <h2>No orders yet</h2>
-      <p>There’s currently no orders placed </p>
+      <div className={styles.orderText}>
+      <h1>No orders yet</h1>
+      <p>There’s currently no orders placed</p>
+      </div>
+      
     </div>
   </>
 );

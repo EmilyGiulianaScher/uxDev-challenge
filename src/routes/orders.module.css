@@ -1,0 +1,42 @@
+.orderscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 20px;
+
+}
+
+.orderscontainer img {
+  width: 250px;
+}
+
+.orderscontainer h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.orderscontainer p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  color: var(--neutral-gray-600); 
+}
+
+.orderText{
+  Gap:16px;
+}
+/* Media query para responsividad */
+@media (max-width: 600px) {
+  .orderscontainer {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}

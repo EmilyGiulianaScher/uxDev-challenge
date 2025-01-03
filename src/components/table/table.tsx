@@ -32,6 +32,13 @@ const defaultColumns: ColumnDef<ProductProps>[] = [
   {
     header: "Customer",
     accessorKey: "customer",
+    cell: ({ row }) => (
+      //agregue el mail debajo del nombre del usuario 
+      <>
+        <span className={styles.customername}>{row.original.customer}</span>
+        <span>{row.original.email}</span>
+      </>
+    ),
   },
   {
     header: "Date",

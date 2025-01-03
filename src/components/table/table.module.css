@@ -1,46 +1,77 @@
 .tableContainer {
+  padding: 24px;
+  gap: 16px;
+  border: 1px solid var(--neutral-gray-300);
+  border-radius: 24px;
+  
+
   h2 {
-    color: var(--neutral-gray-800);
+    font-size: 24px;
     font-weight: 700;
+    line-height: 31.75px;
+    margin: 0 auto;
   }
   p {
-    color: var(--neutral-gray-800);
+    font-weight: 400;
+    size: 14px;
+    line-height: 18.52px;
+    height: 19px;
   }
-
-  
 }
 
-/* Estilo general de la tabla */
 .table {
   width: 100%;
-  text-align: left;
+  border-collapse: collapse;
 }
 
-/* Encabezado de la tabla */
-.table thead {
-  
+.table th,
+.table td {
+  height: 63px;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--neutral-gray-200);
+
+}
+.table th :first-child{
+  border-bottom: 1px solid var(--neutral-gray-300);
+}
+
+.table td:last-child,
+.table th:last-child {
+  text-align: right;
 }
 
 .table th {
- 
+  font-weight: 500;
+  size: 12px;
+  line-height: 15.88px;
+  cursor: pointer;
 }
 
-.table th:hover {
- 
+.customername {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.52px;
+  color: var(--neutral-gray-800);
 }
 
-/* Cuerpo de la tabla */
-.table tbody tr {
-  border-bottom: 1px solid var(--neutral-gray-200); /* Raya entre filas */
-  padding: 8px;
-  
+/* Solo para el email */
+.table td span:last-child {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.88px;
+  color: var(--neutral-gray-800);
 }
 
+/* Efecto hover en toda la fila */
 .table tbody tr:hover {
-  background-color: var(--neutral-gray-100);
+  background-color: var(--neutral-gray-200); /* Cambiar a un tono más oscuro */
 }
+.table  th:hover{
+  background-color: var(--neutral-gray-100); /* Cambiar a un tono más oscuro */
+  box-shadow: 0px 1px 2px var(--shadow);
+  border-radius: 12px;
+  color: var(--main);
 
-/* Celdas de la tabla */
-.table td {
-  padding: 8px;
 }
